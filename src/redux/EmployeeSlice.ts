@@ -116,7 +116,7 @@ export const fetchEmployees = createAsyncThunk('employee/fetchEmployee', async (
         const response = await client.query({
             query: gql`
                 query GetEmployees {
-                    employees(limit: 6) {
+                    employees(limit: 100) {
                         data {
                             id
                             name
